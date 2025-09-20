@@ -34,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:all": "concurrently \"cd ../backend && python manage.py runserver 8000\" \"npm start\""
   },
   "eslintConfig": {
     "extends": [
@@ -55,7 +56,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^27.5.0"
-  },
-  "proxy": "http://localhost:3000"
+    "@types/jest": "^27.5.0",
+    "concurrently": "^8.2.2"
+  }
 }
