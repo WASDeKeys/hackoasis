@@ -1,0 +1,51 @@
+
+# Prevent CRLF/LF line ending issues
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+
+# Ignore Python cache and environment folders
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+# Ignore SQLite database
+*.sqlite3
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Python virtual environments
+venv/
+ENV/
+
+# Ignore pip, build, and dist folders
+pip-selfcheck.json
+build/
+dist/
+
+# Ignore Django migration and settings
+migrations/
+settings.pyc
+
+# Ignore Windows PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/
+PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/
+
+# Ignore site-packages and local-packages
+site-packages/
+local-packages/
+
+# Ignore other temp/cache folders
+*.log
+*.tmp
+*.bak
+
+# Ignore node_modules for frontend
+frontend/node_modules/
+
+# Ignore npm debug log
+npm-debug.log*
